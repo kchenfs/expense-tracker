@@ -51,3 +51,9 @@ variable "telegram_token" {
   type        = string
   sensitive   = true
 }
+
+variable "telegram_secret" {
+  description = "Secret token to validate incoming Telegram webhooks"
+  type        = string
+  sensitive   = true
+}

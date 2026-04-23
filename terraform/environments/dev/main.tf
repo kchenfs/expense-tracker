@@ -62,6 +62,7 @@ module "telegram_ingest_lambda" {
   environment_vars = { 
     S3_BUCKET_NAME = module.receipts_bucket.bucket_name
     TELEGRAM_TOKEN = var.telegram_token
+    TELEGRAM_SECRET = var.telegram_secret
   }
 }
 
