@@ -99,7 +99,7 @@ module "ocr_lambda" {
   environment_vars     = { OPENROUTER_API_KEY = var.openrouter_api_key }
   
   # NEW: Give the AI time and memory!
-  timeout              = 60
+  timeout              = 500
   memory_size          = 512
 }
 
